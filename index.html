@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Weather App</h2>
+      <div class="search-box">
+        <ion-icon name="location-outline" class="map-icon"></ion-icon>
+        <input type="text" placeholder="Enter a Location" class="input" />
+      </div>
+      <button>Search</button>
+
+      <div class="weather-box">
+        <div class="details-box"></div>
+        <div class="wind-humidity-box">
+          <div class="wind-humidity">
+            <div class="wind-details"></div>
+            <div class="humidity-details"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-box"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

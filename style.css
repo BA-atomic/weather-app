@@ -1,0 +1,184 @@
+<<<<<<< HEAD * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #500aa0;
+}
+
+.container {
+  width: 350px;
+  background-color: #8a58da;
+  text-align: center;
+  padding: 15px 15px 0 15px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.map-icon {
+  position: absolute;
+  left: 5px;
+  color: orangered;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0px 0px 0px 15px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #b189f1;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+button:hover,
+button:active {
+  background-color: #713fc0;
+  transition: 0.3s;
+}
+
+.weather-box {
+  padding: 20px;
+  display: none;
+}
+
+img {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.details-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.error-box {
+  display: none;
+  margin-bottom: 24px;
+}
+
+.cloud {
+  font-size: 100px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.temp-icon {
+  border-radius: 12px;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.desc {
+  margin-bottom: 0;
+}
+
+.wind-humidity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 30em) {
+  .container {
+    max-width: 300px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .cloud {
+    font-size: 90px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 27em) {
+  .container {
+    max-width: 80%;
+  }
+} */
+
+/* Medium Devices (Tablets) */
