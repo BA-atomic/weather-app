@@ -1,4 +1,4 @@
-<<<<<<< HEAD * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -151,11 +151,11 @@ p {
 /* Small Devices (Phones) */
 @media (max-width: 30em) {
   .container {
-    max-width: 300px;
+    max-width: 80%;
   }
 
   p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .cloud {
@@ -173,12 +173,42 @@ p {
   .search-box {
     width: 100%;
   }
+
+  .wind-humidity {
+    gap: 80px;
+  }
 }
 
-/* @media (max-width: 27em) {
+@media (max-width: 24em) {
   .container {
-    max-width: 80%;
+    max-width: 70%;
   }
-} */
 
-/* Medium Devices (Tablets) */
+  p {
+    font-size: 9.5px;
+  }
+}
+
+@media (max-width: 21em) {
+  .container {
+    max-width: 70%;
+  }
+
+  .wind-humidity {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 17em) {
+  .container {
+    max-width: 70%;
+  }
+
+  .wind-humidity {
+    gap: 40px;
+  }
+
+  p {
+    font-size: 9px;
+  }
+}
